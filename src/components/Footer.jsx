@@ -43,10 +43,11 @@ const Footer = () => {
 					<div className='mb-4 text-sm text-center lg:mb-0 lg:text-left'>© Kardeşim Ol bir İstanbul İnsani Yardım Derneği projesidir.</div>
 
 					<div className='flex gap-4'>
-						<a href='#' className='p-3 text-white transition rounded-full shadow-md bg-primary hover:bg-primary-dark'>
-							<FaFacebookF />
-						</a>
-						<a href='#' className='p-3 text-white transition rounded-full shadow-md bg-primary hover:bg-primary-dark'>
+						<a
+							target='_blank'
+							href='https://www.instagram.com/kardesimoll/'
+							className='p-3 text-white transition rounded-full shadow-md bg-primary hover:bg-primary-dark'
+						>
 							<FaInstagram />
 						</a>
 					</div>
