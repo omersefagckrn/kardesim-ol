@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.slick-prev{
+    @apply bg-secondary rounded-full !important;
+}
+
+.slick-next{
+    @apply bg-secondary rounded-full !important;
+}
