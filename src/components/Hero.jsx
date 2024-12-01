@@ -33,19 +33,24 @@ const Hero = () => {
 	};
 
 	return (
-		<div ref={ref} className='flex flex-col items-center text-center px-6 lg:px-0 py-16 w-full bg-gradient-to-r from-[#f5f7fa] to-[#c3dfe5]'>
+		<div id='hero' ref={ref} className='flex flex-col items-center w-full px-6 py-12 text-center lg:px-0 bg-primary'>
 			<motion.div initial='hidden' animate={controls} variants={containerVariants} className='flex flex-col items-center'>
-				<motion.h1 className='mb-4 text-2xl font-bold lg:text-3xl text-secondary' variants={itemVariants}>
+				<motion.h1 className='mb-4 text-2xl font-bold text-white lg:text-3xl' variants={itemVariants}>
 					Baykuş’a katıl, tam potansiyeline beraber ulaşalım.
 				</motion.h1>
 
-				<motion.p className='max-w-2xl mb-8 text-gray-700 text-md lg:text-lg opacity-80' variants={itemVariants}>
-					YKS sürecinde maksimum verimde çalışmak, zamanını en iyi şekilde yönetmek ve hedeflerine daha kolay ulaşmak için şimdi bizimle iletişime geç.
+				<motion.p className='max-w-2xl mb-8 font-normal text-white text-md lg:text-lg opacity-80' variants={itemVariants}>
+					YKS sürecinde maksimum verimde çalışmak, zamanını en iyi.
 				</motion.p>
+				<div className='flex items-center justify-start space-x-4'>
+					<motion.button className='px-6 py-3 font-bold text-white transition rounded-lg bg-secondary' variants={itemVariants}>
+						Gönüllü Mentör Ol
+					</motion.button>
 
-				<motion.button className='px-6 py-3 font-medium text-white transition rounded-lg bg-secondary' variants={itemVariants}>
-					Bize Ulaş
-				</motion.button>
+					<motion.button className='px-6 py-3 font-bold transition bg-white rounded-lg text-secondary' variants={itemVariants}>
+						Ücretsiz Mentör Ol
+					</motion.button>
+				</div>
 			</motion.div>
 		</div>
 	);

@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import Faq from './components/Faq';
 import Cookies from './components/Cookies';
 import Testimonials from './components/Testimonials';
+import ContentSection from './components/ContentSection';
 
 const App = () => {
 	return (
@@ -14,9 +15,9 @@ const App = () => {
 			<main className='flex-grow'>
 				<Banner />
 				<About />
-				<Testimonials />
-				<Faq />
+				<ContentSection />
 				<Hero />
+				<Faq />
 			</main>
 			<Footer />
 			<Cookies />

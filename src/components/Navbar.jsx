@@ -28,7 +28,7 @@ const Navbar = () => {
 
 	return (
 		<>
-			<motion.nav className='fixed top-0 left-0 z-50 w-full bg-white shadow-lg' initial={{ y: -100 }} animate={{ y: 0 }} transition={{ duration: 0.5, ease: 'easeOut' }}>
+			<motion.nav className='fixed top-0 left-0 z-50 w-full bg-[#34415B] shadow-lg' initial={{ y: -100 }} animate={{ y: 0 }} transition={{ duration: 0.5, ease: 'easeOut' }}>
 				<div className='container mx-auto px-6 lg:px-0 py-6 flex justify-between items-center h-[80px]'>
 					<HashLink to='#banner' smooth>
 						<img src={ParentLogo} alt='Logo' className='w-44' />
@@ -36,26 +36,26 @@ const Navbar = () => {
 
 					<div className='lg:hidden'>
 						{menuOpen ? (
-							<FiX size={30} className='text-black cursor-pointer' onClick={toggleMenu} />
+							<FiX size={30} className='text-white cursor-pointer' onClick={toggleMenu} />
 						) : (
-							<FiMenu size={30} className='text-black cursor-pointer' onClick={toggleMenu} />
+							<FiMenu size={30} className='text-white cursor-pointer' onClick={toggleMenu} />
 						)}
 					</div>
 
 					<div className='hidden space-x-6 lg:flex'>
-						<HashLink to='#banner' className='transition text-secondary hover:text-primary' smooth>
+						<HashLink to='#banner' className='text-white transition hover:text-primary' smooth>
 							Anasayfa
 						</HashLink>
-						<HashLink scroll={(el) => scrollWithOffset(el)} to='#about' className='transition text-secondary hover:text-primary' smooth>
+						<HashLink scroll={(el) => scrollWithOffset(el)} to='#about' className='text-white transition hover:text-primary' smooth>
 							Hakkımızda
 						</HashLink>
-						<HashLink scroll={(el) => scrollWithOffset(el)} to='#comment' className='transition text-secondary hover:text-primary' smooth>
+						<HashLink scroll={(el) => scrollWithOffset(el)} to='#comment' className='text-white transition hover:text-primary' smooth>
 							Yorumlarınız
 						</HashLink>
-						<HashLink scroll={(el) => scrollWithOffset(el)} to='#faq' className='transition text-secondary hover:text-primary' smooth>
+						<HashLink scroll={(el) => scrollWithOffset(el)} to='#faq' className='text-white transition hover:text-primary' smooth>
 							Sıkça Sorulan Sorular
 						</HashLink>
-						<HashLink to='#contact' className='transition text-secondary hover:text-primary' smooth>
+						<HashLink to='#contact' className='text-white transition hover:text-primary' smooth>
 							İletişim
 						</HashLink>
 					</div>
