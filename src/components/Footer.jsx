@@ -24,7 +24,7 @@ const Footer = () => {
 				<div className='flex flex-col items-center justify-between pb-6 mb-6 border-b border-gray-300 lg:flex-row'>
 					<div className='text-center lg:text-left'>
 						<h2 className='mb-4 text-xl font-semibold'>Bizimle İletişime Geçin</h2>
-						<div className='text-white/50'>Sorularınız veya destek talepleriniz için bizimle iletişime geçmekten çekinmeyin.</div>
+						<div className='text-gray-50'>Sorularınız veya destek talepleriniz için bizimle iletişime geçmekten çekinmeyin.</div>
 					</div>
 
 					<div className='flex flex-col items-center mt-6 lg:items-end lg:mt-0'>
@@ -32,7 +32,7 @@ const Footer = () => {
 							<FaPhone className='text-primary' />
 							+90 555 123 4567
 						</a>
-						<a href='mailto:info@kardesimol.com' className='flex items-center gap-3 mt-2 font-medium transition text-white/50 hover:text-primary'>
+						<a href='mailto:info@kardesimol.com' className='flex items-center gap-3 mt-2 font-medium text-white transition hover:text-primary'>
 							<FaEnvelope className='text-primary' />
 							info@kardesimol.com
 						</a>

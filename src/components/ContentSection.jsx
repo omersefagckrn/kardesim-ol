@@ -29,23 +29,29 @@ const ContentSection = () => {
 	};
 
 	return (
-		<div ref={ref} className='container px-6 py-16 mx-auto lg:px-0'>
-			<div className='grid items-center grid-cols-1 gap-8 lg:grid-cols-2'>
-				{/* Sol Taraf - Yazı */}
-				<motion.div className='text-center lg:text-left' initial='hidden' animate={controls} variants={textVariants}>
-					<h2 className='mb-4 text-3xl font-bold text-secondary'>Destekle Daha Güçlü Olabiliriz</h2>
-					<p className='mb-6 text-lg leading-relaxed text-secondary/70'>
-						Toplumsal dayanışmayı artırarak, gençlere eğitim fırsatları sunuyoruz. Geleceğe umutla bakmak ve daha güçlü bir toplum inşa etmek için
-						katılın!Toplumsal dayanışmayı artırarak, gençlere eğitim fırsatları sunuyoruz. Geleceğe umutla bakmak ve daha güçlü bir toplum inşa etmek
-						için katılın!Toplumsal dayanışmayı artırarak, gençlere eğitim fırsatları sunuyoruz. Geleceğe umutla bakmak ve daha güçlü bir toplum inşa
-						etmek için katılın!
-					</p>
-				</motion.div>
+		<div id='period' className='bg-[#e5ebe5]/50'>
+			<div ref={ref} className='container px-6 py-16 mx-auto lg:px-0 '>
+				<div className='grid items-center grid-cols-1 gap-24 lg:grid-cols-2'>
+					<motion.div className='flex justify-center' initial='hidden' animate={controls} variants={imageVariants}>
+						<img src={ParentImage} alt='Destek' className='w-full max-w-3xl rounded-lg shadow-lg' />
+					</motion.div>
 
-				{/* Sağ Taraf - Resim */}
-				<motion.div className='flex justify-center' initial='hidden' animate={controls} variants={imageVariants}>
-					<img src={ParentImage} alt='Destek' className='w-full max-w-xl rounded-lg shadow-lg' />
-				</motion.div>
+					<motion.div className='text-center lg:text-left' initial='hidden' animate={controls} variants={textVariants}>
+						<h2 className='mb-4 text-3xl font-bold text-secondary'>Destekle Daha Güçlü Olabiliriz</h2>
+						<p className='mb-6 text-lg leading-relaxed text-secondary/70'>
+							Toplumsal dayanışmayı artırarak, gençlere eğitim fırsatları sunuyoruz. Geleceğe umutla bakmak ve daha güçlü bir toplum inşa etmek
+							için katılın!Toplumsal dayanışmayı artırarak, gençlere eğitim fırsatları sunuyoruz. Geleceğe umutla bakmak ve daha güçlü bir
+							toplum inşa etmek için katılın!Toplumsal dayanışmayı artırarak, gençlere eğitim fırsatları sunuyoruz. Geleceğe umutla bakmak ve
+							daha güçlü bir toplum inşa etmek için katılın!l dayanışmayı artırarak, gençlere eğitim fırsatları sunuyoruz. Geleceğe umutla
+							bakmak ve daha güçlü bir toplum inşa etmek için katılın!Toplumsal l dayanışmayı artırarak, gençlere eğitim fırsatları sunuyoruz.
+							Geleceğe umutla bakmak ve daha güçlü bir toplum inşa etmek için katılın!Toplumsal l dayanışmayı artırarak, gençlere eğitim
+							fırsatları sunuyoruz. Geleceğe umutla bakmak ve daha güçlü bir toplum inşa etmek için katılın!Toplumsal l dayanışmayı artırarak,
+							gençlere eğitim fırsatları sunuyoruz. Geleceğe umutla bakmak ve daha güçlü bir toplum inşa etmek için katılın!Toplumsal l
+							dayanışmayı artırarak, gençlere eğitim fırsatları sunuyoruz. Geleceğe umutla bakmak ve daha güçlü bir toplum inşa etmek için
+							katılın
+						</p>
+					</motion.div>
+				</div>
 			</div>
 		</div>
 	);

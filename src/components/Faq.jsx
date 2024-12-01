@@ -62,15 +62,15 @@ const Faq = () => {
 	};
 
 	return (
-		<div id='faq' className='px-6 lg:px-0 py-20'>
+		<div id='faq' className='px-6 lg:px-0 py-20 bg-[#e5ebe5]/50'>
 			<motion.div ref={ref} initial='hidden' animate={controls} variants={containerVariants} className='container mx-auto'>
-				<h2 className='text-3xl font-bold text-secondary text-center mb-8'>Sıkça Sorulan Sorular</h2>
+				<h2 className='mb-8 text-3xl font-bold text-center text-secondary'>Sıkça Sorulan Sorular</h2>
 				<div className='space-y-6'>
 					{faqData.map((faq, index) => (
-						<motion.div key={index} variants={itemVariants} className='border-b pb-5 border-gray-400'>
+						<motion.div key={index} variants={itemVariants} className='pb-5 border-b border-gray-400'>
 							<button
 								onClick={() => toggleFaq(index)}
-								className='w-full flex justify-between items-center text-left text-md lg:text-lg font-semibold text-secondary focus:outline-none'
+								className='flex items-center justify-between w-full font-semibold text-left text-md lg:text-lg text-secondary focus:outline-none'
 							>
 								{faq.question}
 								<motion.span transition={{ duration: 0.3 }} className='text-xl font-bold'>
@@ -88,7 +88,7 @@ const Faq = () => {
 										transition={{ duration: 0.35, ease: 'easeInOut' }}
 										className='overflow-hidden'
 									>
-										<p className='text-gray-700 text-opacity-80 mt-2'>{faq.answer}</p>
+										<p className='mt-2 text-gray-700 text-opacity-80'>{faq.answer}</p>
 									</motion.div>
 								)}
 							</AnimatePresence>

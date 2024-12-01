@@ -47,10 +47,13 @@ const Navbar = () => {
 							Anasayfa
 						</HashLink>
 						<HashLink scroll={(el) => scrollWithOffset(el)} to='#about' className='text-white transition hover:text-primary' smooth>
-							Hakkımızda
+							Faaliyetlerimiz
 						</HashLink>
-						<HashLink scroll={(el) => scrollWithOffset(el)} to='#comment' className='text-white transition hover:text-primary' smooth>
-							Yorumlarınız
+						<HashLink scroll={(el) => scrollWithOffset(el)} to='#period' className='text-white transition hover:text-primary' smooth>
+							Sürecimiz
+						</HashLink>
+						<HashLink scroll={(el) => scrollWithOffset(el)} to='#support' className='text-white transition hover:text-primary' smooth>
+							Desteklerimiz
 						</HashLink>
 						<HashLink scroll={(el) => scrollWithOffset(el)} to='#faq' className='text-white transition hover:text-primary' smooth>
 							Sıkça Sorulan Sorular
@@ -74,17 +77,27 @@ const Navbar = () => {
 						smooth
 						onClick={() => setMenuOpen(false)}
 					>
-						Hakkımızda
+						Faaliyetlerimiz
 					</HashLink>
 					<HashLink
 						scroll={(el) => scrollWithOffset(el)}
-						to='#comment'
+						to='#period'
 						className='text-lg font-medium text-white transition'
 						smooth
 						onClick={() => setMenuOpen(false)}
 					>
-						Yorumlarınız
+						Sürecimiz
 					</HashLink>
+					<HashLink
+						scroll={(el) => scrollWithOffset(el)}
+						to='#support'
+						className='text-lg font-medium text-white transition'
+						smooth
+						onClick={() => setMenuOpen(false)}
+					>
+						Desteklerimiz
+					</HashLink>
+
 					<HashLink
 						scroll={(el) => scrollWithOffset(el)}
 						to='#faq'

@@ -31,13 +31,11 @@ const Banner = () => {
 	};
 
 	return (
-		<div id='banner' className='relative overflow-hidden bg-white lg:bg-gradient-to-br from-[#e3f2fd] to-[#bbdefb] py-40'>
-			<div className='absolute inset-0 hidden bg-center bg-no-repeat bg-cover opacity-30 lg:block' style={{ backgroundImage: `url(${ParentBannerLogo})` }}></div>
-
+		<div id='banner' className='relative py-56 overflow-hidden bg-[#e5ebe5]/50'>
 			<div className='container relative flex flex-col items-center justify-between gap-12 px-6 mx-auto lg:flex-row lg:px-0'>
 				<motion.div className='relative z-10 flex justify-center order-1 w-full lg:order-2 lg:w-1/2' initial='hidden' animate={controls} variants={textVariants}>
 					<div className='relative'>
-						<img src={ParentBannerLogo} alt='Banner' className='w-full rounded-lg shadow-lg lg:max-w-xl' />
+						<img src={ParentBannerLogo} alt='Banner' className='w-full rounded-lg shadow-lg lg:max-w-2xl' />
 						<motion.div
 							className='absolute w-full h-full max-w-xs rounded-full -top-6 -left-6 max-h-xs bg-primary'
 							initial={{ opacity: 0, scale: 0.9 }}
@@ -67,7 +65,7 @@ const Banner = () => {
 							</motion.button>
 						</HashLink>
 						<motion.button
-							className='px-6 py-3 font-medium transition bg-white border rounded-lg shadow-lg text-primary border-primary hover:bg-gray-100'
+							className='px-6 py-3 font-medium text-white transition border rounded-lg shadow-lg bg-secondary'
 							whileHover={{ scale: 1.05 }}
 							whileTap={{ scale: 0.95 }}
 						>
