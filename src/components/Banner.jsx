@@ -32,7 +32,7 @@ const Banner = () => {
 
 	return (
 		<div id='banner' className='relative py-56 overflow-hidden bg-[#e5ebe5]/50'>
-			<div className='container relative flex flex-col items-center justify-between gap-12 px-6 mx-auto lg:flex-row lg:px-0'>
+			<div className='container relative flex flex-col items-center justify-between gap-12 px-6 mx-auto lg:flex-row'>
 				<motion.div className='relative z-10 flex justify-center order-1 w-full lg:order-2 lg:w-1/2' initial='hidden' animate={controls} variants={textVariants}>
 					<div className='relative'>
 						<img src={ParentBannerLogo} alt='Banner' className='w-full rounded-lg shadow-lg lg:max-w-2xl' />
@@ -46,14 +46,13 @@ const Banner = () => {
 					</div>
 				</motion.div>
 
-				{/* Metin Alanı */}
 				<motion.div ref={ref} className='z-10 flex flex-col order-2 w-full gap-6 pt-10 lg:order-1 lg:w-1/2' initial='hidden' animate={controls} variants={textVariants}>
 					<h1 className='text-4xl font-extrabold leading-tight lg:text-5xl text-secondary'>
 						Asrın felaketinin yaralarını <span className='text-primary'>Beraber</span> Saralım
 					</h1>
-					<p className='text-lg leading-relaxed text-gray-700 lg:text-xl'>
-						Toplumsal dayanışmayı artırarak, gençlere eğitim fırsatları sunan bir projeyiz. Geleceğe umutla bakmak için siz de bize katılabilirsiniz!
-					</p>
+					<p className='text-lg leading-relaxed text-gray-700 lg:text-xl'>Kardeşim Ol projesi kapsamında 30 mentor 60 menti arıyoruz.</p>
+					<p className='text-lg leading-relaxed text-gray-700 lg:text-xl'>Mentor: Üniversite 2. 3. 4. Sınıf öğrencileri</p>
+					<p className='text-lg leading-relaxed text-gray-700 lg:text-xl'>Menti: Depremden etkilenmiş 12. Sınıf öğrenciler</p>
 					<div className='flex gap-4 mt-4'>
 						<HashLink to='#hero' scroll={(el) => scrollWithOffset(el)}>
 							<motion.button

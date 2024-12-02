@@ -7,22 +7,22 @@ const features = [
 	{
 		icon: <FaUsers size={40} className='text-secondary' />,
 		title: 'Online Mentörlük',
-		description: 'Birbirine destek olan güçlü bir topluluk oluşturuyoruz.'
+		description: 'Ayda 4 online görüşmeyle 2 öğrenciye mentörlük.'
 	},
 	{
 		icon: <FaHandshake size={40} className='text-secondary' />,
 		title: 'Kahve Saati Seminerleri',
-		description: 'Hedefimiz, dayanışmayı artırarak daha büyük bir etki yaratmak.'
+		description: 'Ayda bir gerçekleşecek; Meslek seçimi, Meslek hayatı, entelektüel gelişim, ve çeşitli konularda gelişim seminerleri.'
 	},
 	{
 		icon: <FaLightbulb size={40} className='text-secondary' />,
-		title: 'Sürdürülebilirlik',
-		description: 'Farklı fikirleri bir araya getirerek yenilikçi çözümler sunuyoruz.'
+		title: 'Büyük Buluşma',
+		description: 'Tüm Mentorlerimizi ve mentilerimizi deprem bölgesinde bir araya getiriyoruz.'
 	},
 	{
 		icon: <FaUsers size={40} className='text-secondary' />,
-		title: 'Büyük Buluşma',
-		description: 'Farklı fikirleri bir araya getirerek yenilikçi çözümler sunuyoruz.'
+		title: 'Sürdürülebilirlik',
+		description: '2 yıllık proje sürecini başarıyla bitiren mentilerimizi, tarafımızca burs sağlayarak mentorlük yapmaya davet ediyoruz.'
 	}
 ];
 
@@ -46,7 +46,7 @@ const About = () => {
 		visible: {
 			opacity: 1,
 			transition: {
-				staggerChildren: 0.2 // Çocuklar arası gecikme
+				staggerChildren: 0.2
 			}
 		}
 	};

@@ -38,17 +38,16 @@ const ContentSection = () => {
 
 					<motion.div className='text-center lg:text-left' initial='hidden' animate={controls} variants={textVariants}>
 						<h2 className='mb-4 text-3xl font-bold text-secondary'>Destekle Daha Güçlü Olabiliriz</h2>
-						<p className='mb-6 text-lg leading-relaxed text-secondary/70'>
-							Toplumsal dayanışmayı artırarak, gençlere eğitim fırsatları sunuyoruz. Geleceğe umutla bakmak ve daha güçlü bir toplum inşa etmek
-							için katılın!Toplumsal dayanışmayı artırarak, gençlere eğitim fırsatları sunuyoruz. Geleceğe umutla bakmak ve daha güçlü bir
-							toplum inşa etmek için katılın!Toplumsal dayanışmayı artırarak, gençlere eğitim fırsatları sunuyoruz. Geleceğe umutla bakmak ve
-							daha güçlü bir toplum inşa etmek için katılın!l dayanışmayı artırarak, gençlere eğitim fırsatları sunuyoruz. Geleceğe umutla
-							bakmak ve daha güçlü bir toplum inşa etmek için katılın!Toplumsal l dayanışmayı artırarak, gençlere eğitim fırsatları sunuyoruz.
-							Geleceğe umutla bakmak ve daha güçlü bir toplum inşa etmek için katılın!Toplumsal l dayanışmayı artırarak, gençlere eğitim
-							fırsatları sunuyoruz. Geleceğe umutla bakmak ve daha güçlü bir toplum inşa etmek için katılın!Toplumsal l dayanışmayı artırarak,
-							gençlere eğitim fırsatları sunuyoruz. Geleceğe umutla bakmak ve daha güçlü bir toplum inşa etmek için katılın!Toplumsal l
-							dayanışmayı artırarak, gençlere eğitim fırsatları sunuyoruz. Geleceğe umutla bakmak ve daha güçlü bir toplum inşa etmek için
-							katılın
+						<p className='mb-6 space-y-6 text-lg leading-relaxed text-secondary/70'>
+							<div>Mentorlük Hizmetini Nasıl Sağlıyoruz?</div>
+							<div>
+								Mentorlük hizmeti almak isteyen menti, hedeflediği üniversite / bölüme en uygun mentorümüzü belirleyip mentor ataması
+								yapıyoruz.
+							</div>
+							<div>
+								Mentor atamamız yapıldıktan sonra mentorümüz, YKS'ye hazırlanan öğrencimizle, iki haftada bir kez de "Zoom" online
+								konferans, iki haftada bir kez telefonda sesli gerçekleştirir.
+							</div>
 						</p>
 					</motion.div>
 				</div>

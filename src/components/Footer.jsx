@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import { FaPhone, FaEnvelope, FaFacebookF, FaInstagram } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
 	const controls = useAnimation();

@@ -4,24 +4,35 @@ import { useInView } from 'react-intersection-observer';
 
 const faqData = [
 	{
-		question: "Baykuş App'e nasıl giriş yapacağım?",
-		answer: "Baykuş App'e kayıt olduktan sonra kullanıcı adı ve şifrenizle giriş yapabilirsiniz."
+		question: 'Kardeşim Ol Projesi Nedir?',
+		answer: 'Asrın felaketinde ebeveynlerinden en az birisini kaybetmiş 12.sınıf öğrencilere, üniversite öğrencileriyle 2 yılık süre zarfınca dostluk ve kardeşlik esasıyla kurulan bir bağdır. (1+1: Üniversite sınav (YKS) rehberliği, üniversite adaptasyonu ve kişisel gelişim)'
 	},
 	{
-		question: "Kayıt olduktan sonra Baykuş App'i nasıl kullanacağım?",
-		answer: "Baykuş App'te profilinizi oluşturduktan sonra mentörlerle görüşme ayarlayabilirsiniz."
+		question: 'Kardeşim Ol Projesinin amacı nedir?',
+		answer: [
+			'Kardeşlik ve dostluk bağları kurarak depremin oluşturduğu yaraları hep birlikte sarmak.',
+			'YKS maratonu süresince mentiyi maddi ve manevi desteklemek.',
+			'Kırsaldaki başarı potansiyeli yüksek öğrencileri destekleyerek eğitimde fırsat eşitliği sağlayabilmek.'
+		]
 	},
 	{
-		question: 'Ödeme yaptıktan sonra süreç nasıl işliyor?',
-		answer: 'Ödeme tamamlandıktan sonra size özel bir mentör atanır ve görüşme günleriniz belirlenir.'
+		question: 'Mentor atamaları nasıl gerçekleşiyor?',
+		answer: 'Mentinin hedeflediği üniversite/bölüm doğrultusunda en uygun mentorümüzü mentiye atarız.'
 	},
 	{
-		question: 'Baykuş Deneme Kulübü Nasıl İşliyor?',
-		answer: 'Deneme kulübünde farklı derslerden deneme sınavlarına katılarak kendinizi test edebilirsiniz.'
+		question: 'Mentorler ne yapacak?',
+		answer: 'Mentorlük yaptığı 2 menti ile ayda 2 kere online 2 kere sesli görüşür. Mentorler aylık gündemler doğrultusunda menti ile sohbet eder. Mentinin akademik ilerleyişi takip ederek eksikliklerini tespit ederek tecrübelerinden yola çıkarak yönlendirmeler yapar.'
 	},
 	{
-		question: 'Görüşme Günleri Nasıl Belirleniyor?',
-		answer: 'Mentörünüzle karşılıklı uygunluk durumuna göre görüşme günleri belirlenir.'
+		question: 'Başvurular ne sıklıkla açılıyor?',
+		answer: 'Her sene yaz bitiminden sonra başvurular önce mentor sonra menti için açılıyor.'
+	},
+	{
+		question: 'Başvurum süreci nasıl işler?',
+		answer: [
+			'Başvurular ekibimizce incelendikten sonra mail üzerinden sürecin devamıyla ilgili bilgilendirme yapıyoruz.',
+			'kardesimol.com üzerinden mentor ve menti için hazırladığımız formu doldurup bize göndererek başvuru yapabilirsiniz.'
+		]
 	}
 ];
 
@@ -88,7 +99,15 @@ const Faq = () => {
 										transition={{ duration: 0.35, ease: 'easeInOut' }}
 										className='overflow-hidden'
 									>
-										<p className='mt-2 text-gray-700 text-opacity-80'>{faq.answer}</p>
+										{Array.isArray(faq.answer) ? (
+											<ul className='mt-2 text-gray-700 list-disc list-inside text-opacity-80'>
+												{faq.answer.map((item, idx) => (
+													<li key={idx}>{item}</li>
+												))}
+											</ul>
+										) : (
+											<p className='mt-2 text-gray-700 text-opacity-80'>{faq.answer}</p>
+										)}
 									</motion.div>
 								)}
 							</AnimatePresence>
