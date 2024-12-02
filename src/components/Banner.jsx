@@ -50,10 +50,12 @@ const Banner = () => {
 					<h1 className='text-4xl font-extrabold leading-tight lg:text-5xl text-secondary'>
 						Asrın felaketinin yaralarını <span className='text-primary'>Beraber</span> Saralım
 					</h1>
-					<p className='text-lg leading-relaxed text-gray-700 lg:text-xl'>Kardeşim Ol projesi kapsamında 30 mentor 60 menti arıyoruz.</p>
+					<p className='text-lg leading-relaxed text-gray-700 lg:text-xl'>
+						Kardeşim Ol projesi kapsamında <strong>30 mentor 60 menti</strong> arıyoruz.
+					</p>
 					<p className='text-lg leading-relaxed text-gray-700 lg:text-xl'>Mentor: Üniversite 2. 3. 4. Sınıf öğrencileri</p>
 					<p className='text-lg leading-relaxed text-gray-700 lg:text-xl'>Menti: Depremden etkilenmiş 12. Sınıf öğrenciler</p>
-					<div className='flex gap-4 mt-4'>
+					<div className='flex gap-4 mt-1'>
 						<HashLink to='#hero' scroll={(el) => scrollWithOffset(el)}>
 							<motion.button
 								className='px-6 py-3 font-medium text-white transition rounded-lg shadow-lg bg-primary hover:bg-primary-dark'
