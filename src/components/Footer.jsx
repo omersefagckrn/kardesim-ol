@@ -28,9 +28,9 @@ const Footer = () => {
 					</div>
 
 					<div className='flex flex-col items-center mt-6 lg:items-end lg:mt-0'>
-						<a href='tel:+905551234567' className='flex items-center gap-3 font-medium transition hover:text-primary'>
+						<a href='tel:+905330354800' className='flex items-center gap-3 font-medium transition hover:text-primary'>
 							<FaPhone className='text-primary' />
-							+90 555 123 4567
+							+90 533 035 4800
 						</a>
 						<a href='mailto:info@kardesimol.com' className='flex items-center gap-3 mt-2 font-medium text-white transition hover:text-primary'>
 							<FaEnvelope className='text-primary' />
