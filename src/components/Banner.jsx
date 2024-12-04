@@ -36,7 +36,7 @@ const Banner = () => {
 	};
 
 	return (
-		<div id='banner' className='relative py-56 overflow-hidden bg-gradient-to-b from-[#f5f7fa] to-[#e1e8ed]'>
+		<div id='banner' className='relative py-36 lg:py-56 overflow-hidden bg-gradient-to-b from-[#f5f7fa] to-[#e1e8ed]'>
 			<div className='container relative flex flex-col items-center justify-between gap-12 px-6 mx-auto lg:flex-row'>
 				<motion.div className='relative z-10 flex justify-center order-1 w-full lg:order-2 lg:w-1/2' initial='hidden' animate={controls} variants={imageVariants}>
 					<div className='relative max-w-full lg:max-w-2xl'>
