@@ -100,7 +100,7 @@ const Faq = () => {
 	};
 
 	return (
-		<div id='faq' className='px-6 lg:px-0 py-20 bg-[#e5ebe5]/50'>
+		<div id='faq' className='px-6 py-20 bg-[#e5ebe5]/50'>
 			<motion.div ref={ref} initial='hidden' animate={controls} variants={containerVariants} className='container mx-auto'>
 				<h2 className='mb-8 text-3xl font-bold text-center text-secondary'>Sıkça Sorulan Sorular</h2>
 				{sections.map((section, sectionIndex) => (

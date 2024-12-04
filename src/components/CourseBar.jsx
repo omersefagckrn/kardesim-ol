@@ -44,7 +44,7 @@ const CourseBar = () => {
 	};
 
 	return (
-		<div ref={ref} className='container px-6 py-16 mx-auto lg:px-0'>
+		<div ref={ref} className='container px-6 py-16 mx-auto'>
 			<h2 className='mb-10 text-3xl font-bold text-center text-secondary'>Mentörlere Vereceğimiz Eğitimler</h2>
 			<motion.div
 				initial='hidden'

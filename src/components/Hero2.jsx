@@ -34,7 +34,7 @@ const Hero2 = () => {
 	};
 
 	return (
-		<div id='hero' ref={ref} className='flex flex-col items-center w-full px-6 py-12 text-center lg:px-0 bg-primary'>
+		<div id='hero' ref={ref} className='flex flex-col items-center w-full px-6 py-12 text-center bg-primary'>
 			<motion.div initial='hidden' animate={controls} variants={containerVariants} className='flex flex-col items-center space-y-4'>
 				<motion.h1 className='mb-4 text-xl font-bold text-white lg:text-2xl' variants={itemVariants}>
 					Üniversite sınav maratonunda ücretsiz mentorlük almak ister misin ?

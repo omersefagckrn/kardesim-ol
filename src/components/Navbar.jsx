@@ -29,7 +29,7 @@ const Navbar = () => {
 	return (
 		<>
 			<motion.nav className='fixed top-0 left-0 z-50 w-full bg-[#34415B] shadow-lg' initial={{ y: -100 }} animate={{ y: 0 }} transition={{ duration: 0.5, ease: 'easeOut' }}>
-				<div className='container mx-auto px-6 lg:px-0 py-6 flex justify-between items-center h-[80px]'>
+				<div className='container mx-auto px-6 py-6 flex justify-between items-center h-[80px]'>
 					<HashLink to='#banner' smooth>
 						<img src={ParentLogo} alt='Logo' className='w-44' />
 					</HashLink>

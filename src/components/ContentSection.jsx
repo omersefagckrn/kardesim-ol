@@ -30,7 +30,7 @@ const ContentSection = () => {
 
 	return (
 		<div id='period' className='bg-[#e5ebe5]/50'>
-			<div ref={ref} className='container px-6 py-16 mx-auto lg:px-0 '>
+			<div ref={ref} className='container px-6 py-16 mx-auto'>
 				<div className='grid items-center grid-cols-1 gap-24 lg:grid-cols-2'>
 					<motion.div className='flex justify-center' initial='hidden' animate={controls} variants={imageVariants}>
 						<img src={ParentImage} alt='Destek' className='w-full max-w-3xl rounded-lg shadow-lg' />

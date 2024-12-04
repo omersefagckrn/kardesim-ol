@@ -20,7 +20,7 @@ const Footer = () => {
 
 	return (
 		<motion.footer id='contact' initial='hidden' animate={controls} variants={footerVariants} className='py-20 mt-auto bg-[#34415B] text-white'>
-			<div className='container px-6 mx-auto lg:px-0'>
+			<div className='container px-6 mx-auto'>
 				<div className='flex flex-col items-center justify-between pb-6 mb-6 border-b border-gray-300 lg:flex-row'>
 					<div className='text-center lg:text-left'>
 						<h2 className='mb-4 text-xl font-semibold'>Bizimle İletişime Geçin</h2>
