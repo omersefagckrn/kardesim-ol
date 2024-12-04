@@ -1,28 +1,29 @@
 import { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FaUsers, FaHandshake, FaLightbulb } from 'react-icons/fa';
+
+import { FaChalkboardTeacher, FaCoffee, FaMapMarkerAlt, FaLeaf } from 'react-icons/fa';
 
 const features = [
 	{
-		icon: <FaUsers size={40} className='text-secondary' />,
-		title: 'Online Mentörlük',
-		description: 'Ayda 4 online görüşmeyle 2 öğrenciye mentörlük.'
+		icon: <FaChalkboardTeacher size={40} className='text-secondary' />,
+		title: 'Online Mentorlük',
+		description: 'Ayda 4 toplam online görüşmeyle, 2 öğrenciye mentorlük desteği sağlıyoruz.'
 	},
 	{
-		icon: <FaHandshake size={40} className='text-secondary' />,
-		title: 'Kahve Saati Seminerleri',
-		description: 'Ayda bir gerçekleşecek; Meslek seçimi, Meslek hayatı, entelektüel gelişim, ve çeşitli konularda gelişim seminerleri.'
+		icon: <FaCoffee size={40} className='text-secondary' />,
+		title: 'Kahve Saati Semineri',
+		description: 'Meslek seçimi, meslek hayatı, entelektüel gelişim ve çeşitli konularda gelişim seminerleri düzenli olarak ayda bir gerçekleşir.'
 	},
 	{
-		icon: <FaLightbulb size={40} className='text-secondary' />,
+		icon: <FaMapMarkerAlt size={40} className='text-secondary' />,
 		title: 'Büyük Buluşma',
-		description: 'Tüm Mentorlerimizi ve mentilerimizi deprem bölgesinde bir araya getiriyoruz.'
+		description: 'Tüm mentorlerimizi ve mentilerimizi deprem bölgesinde yüz yüze bir etkinlikte bir araya getiriyoruz.'
 	},
 	{
-		icon: <FaUsers size={40} className='text-secondary' />,
+		icon: <FaLeaf size={40} className='text-secondary' />,
 		title: 'Sürdürülebilirlik',
-		description: '2 yıllık proje sürecini başarıyla bitiren mentilerimizi, tarafımızca burs sağlayarak mentorlük yapmaya davet ediyoruz.'
+		description: 'Proje sürecini başarıyla bitiren mentilerimizi burs desteği ile mentorlük yapmaya teşvik ediyoruz.'
 	}
 ];
 

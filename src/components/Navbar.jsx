@@ -2,10 +2,19 @@ import { useState, useEffect } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { motion } from 'framer-motion';
 import { FiMenu, FiX } from 'react-icons/fi';
+import { FaEnvelope, FaCheckCircle } from 'react-icons/fa';
 import ParentLogo from '../assets/parent-logo.png';
+
+const newsData = [
+	{
+		title: '20.11.2024',
+		description: 'Mentor başvurularımız başladı.'
+	}
+];
 
 const Navbar = () => {
 	const [menuOpen, setMenuOpen] = useState(false);
+	const [isBulletinOpen, setIsBulletinOpen] = useState(false);
 
 	const toggleMenu = () => setMenuOpen(!menuOpen);
 
@@ -65,55 +74,78 @@ const Navbar = () => {
 				</div>
 			</motion.nav>
 
+			{/* Mobil Menü */}
 			{menuOpen && (
-				<div className='fixed inset-0 z-40 flex flex-col items-center justify-center space-y-8 bg-primary'>
-					<HashLink to='#banner' className='text-lg font-medium text-white transition' smooth onClick={() => setMenuOpen(false)}>
+				<div className='fixed inset-0 z-40 flex flex-col items-center justify-center space-y-6 text-white bg-primary'>
+					<HashLink to='#banner' className='text-lg font-medium transition' smooth onClick={() => setMenuOpen(false)}>
 						Anasayfa
 					</HashLink>
-					<HashLink
-						scroll={(el) => scrollWithOffset(el)}
-						to='#about'
-						className='text-lg font-medium text-white transition'
-						smooth
-						onClick={() => setMenuOpen(false)}
-					>
+					<HashLink scroll={(el) => scrollWithOffset(el)} to='#about' className='text-lg font-medium transition' smooth onClick={() => setMenuOpen(false)}>
 						Faaliyetlerimiz
 					</HashLink>
-					<HashLink
-						scroll={(el) => scrollWithOffset(el)}
-						to='#period'
-						className='text-lg font-medium text-white transition'
-						smooth
-						onClick={() => setMenuOpen(false)}
-					>
+					<HashLink scroll={(el) => scrollWithOffset(el)} to='#period' className='text-lg font-medium transition' smooth onClick={() => setMenuOpen(false)}>
 						Sürecimiz
 					</HashLink>
-					<HashLink
-						scroll={(el) => scrollWithOffset(el)}
-						to='#support'
-						className='text-lg font-medium text-white transition'
-						smooth
-						onClick={() => setMenuOpen(false)}
-					>
+					<HashLink scroll={(el) => scrollWithOffset(el)} to='#support' className='text-lg font-medium transition' smooth onClick={() => setMenuOpen(false)}>
 						Desteklerimiz
 					</HashLink>
-
-					<HashLink
-						scroll={(el) => scrollWithOffset(el)}
-						to='#faq'
-						className='text-lg font-medium text-white transition'
-						smooth
-						onClick={() => setMenuOpen(false)}
-					>
+					<HashLink scroll={(el) => scrollWithOffset(el)} to='#faq' className='text-lg font-medium transition' smooth onClick={() => setMenuOpen(false)}>
 						Sıkça Sorulan Sorular
 					</HashLink>
-					<HashLink to='#contact' className='text-lg font-medium text-white transition' smooth onClick={() => setMenuOpen(false)}>
+					<HashLink to='#contact' className='text-lg font-medium transition' smooth onClick={() => setMenuOpen(false)}>
 						İletişim
 					</HashLink>
 				</div>
 			)}
 
-			{/* Arka Plan Kapatıcı */}
+			<div className='fixed z-50 bottom-6 right-6'>
+				<div className='p-4 rounded-full shadow-lg cursor-pointer bg-secondary' onClick={() => setIsBulletinOpen(!isBulletinOpen)}>
+					<FaEnvelope size={24} className='text-white' />
+				</div>
+				{isBulletinOpen && (
+					<motion.div
+						initial={{ opacity: 0, y: 20 }}
+						animate={{ opacity: 1, y: 0 }}
+						exit={{ opacity: 0, y: 20 }}
+						transition={{ duration: 0.5 }}
+						className='absolute right-0 p-4 bg-white rounded-lg shadow-lg bottom-20 w-72'
+					>
+						<h3 className='mb-4 text-lg font-bold text-secondary'>Haber Bülteni</h3>
+						<motion.div
+							initial='hidden'
+							animate='visible'
+							variants={{
+								hidden: { opacity: 0 },
+								visible: {
+									opacity: 1,
+									transition: {
+										staggerChildren: 0.2
+									}
+								}
+							}}
+							className='space-y-3'
+						>
+							{newsData.map((news, index) => (
+								<motion.div
+									key={index}
+									className='flex items-start space-x-2'
+									variants={{
+										hidden: { opacity: 0, x: -10 },
+										visible: { opacity: 1, x: 0 }
+									}}
+								>
+									<FaCheckCircle size={16} className='flex-shrink-0 mt-1 text-green-500' />
+									<div>
+										<h4 className='font-medium text-md text-primary'>{news.title}</h4>
+										<p className='text-sm text-gray-700'>{news.description}</p>
+									</div>
+								</motion.div>
+							))}
+						</motion.div>
+					</motion.div>
+				)}
+			</div>
+
 			{menuOpen && <div className='fixed inset-0 z-30 bg-black bg-opacity-50' onClick={() => setMenuOpen(false)}></div>}
 		</>
 	);

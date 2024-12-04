@@ -39,10 +39,17 @@ const Hero2 = () => {
 				<motion.h1 className='mb-4 text-xl font-bold text-white lg:text-2xl' variants={itemVariants}>
 					Üniversite sınav maratonunda ücretsiz mentorlük almak ister misin ?
 				</motion.h1>
-				<motion.button className='flex items-center px-6 py-3 space-x-2 font-semibold transition bg-white rounded-lg' variants={itemVariants}>
-					<div className='text-secondary'>Ücretsiz Menti Ol</div>
-					<FaChalkboardTeacher size={35} className='text-secondary' />
-				</motion.button>
+				<a
+					href='https://docs.google.com/forms/d/1c6D5-bMNXCu8bRYVeEUyxtU_hVIvBxK82D3JqxyzxQI/prefill'
+					alt='UCRETSIZ MENTI OL'
+					target='_blank'
+					className='text-secondary'
+				>
+					<motion.button className='flex items-center px-6 py-3 space-x-2 font-semibold transition bg-white rounded-lg' variants={itemVariants}>
+						Ücretsiz Menti Ol
+						<FaChalkboardTeacher size={35} className='text-secondary' />
+					</motion.button>
+				</a>
 			</motion.div>
 		</div>
 	);

@@ -2,25 +2,24 @@ import { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-import { FaChalkboardTeacher, FaTabletAlt, FaUserGraduate, FaFileAlt } from 'react-icons/fa';
+import { FaLaptop, FaTabletAlt, FaUserFriends, FaClipboardList } from 'react-icons/fa';
 
 const courses = [
 	{
 		title: 'Eğitim Portalı',
-		icon: <FaChalkboardTeacher size={35} className='text-primary' /> // Eğitim ve öğretimi simgeler
-	},
-
-	{
-		title: 'Tablet',
-		icon: <FaTabletAlt size={35} className='text-primary' /> // Tablet kullanımını simgeler
+		icon: <FaLaptop size={35} className='text-white' />
 	},
 	{
-		title: 'Mentör Rehberliği',
-		icon: <FaUserGraduate size={35} className='text-primary' /> // Öğrenci ve mentörlük desteğini simgeler
+		title: 'Tablet Desteği',
+		icon: <FaTabletAlt size={35} className='text-white' />
 	},
 	{
-		title: 'Deneme Sınavı Kulubü',
-		icon: <FaFileAlt size={35} className='text-primary' /> // Sınav ve değerlendirmeyi simgeler
+		title: 'Mentor Rehberliği',
+		icon: <FaUserFriends size={35} className='text-white' />
+	},
+	{
+		title: 'Deneme Sınavı Kulübü',
+		icon: <FaClipboardList size={35} className='text-white' />
 	}
 ];
 
@@ -46,7 +45,7 @@ const CourseBarMentor = () => {
 
 	return (
 		<div ref={ref} className='container px-6 py-16 mx-auto'>
-			<h2 className='mb-10 text-3xl font-bold text-center text-primary'>Mentilere Vereceğimiz Destek</h2>
+			<h2 className='mb-10 text-3xl font-bold text-center text-secondary'>Mentilere Vereceğimiz Destek</h2>
 			<motion.div
 				initial='hidden'
 				animate={controls}
@@ -59,10 +58,10 @@ const CourseBarMentor = () => {
 					<motion.div
 						key={index}
 						variants={itemVariants}
-						className='flex flex-col items-center justify-center p-6 text-center transition bg-white rounded-lg shadow-lg hover:shadow-xl '
+						className='flex flex-col items-center justify-center p-6 text-center transition rounded-lg shadow-xl bg-secondary '
 					>
 						<div className='mb-4 text-4xl'>{course.icon}</div>
-						<h3 className='mb-2 text-xl font-semibold text-secondary'>{course.title}</h3>
+						<h3 className='mb-2 text-xl font-semibold text-white'>{course.title}</h3>
 					</motion.div>
 				))}
 			</motion.div>

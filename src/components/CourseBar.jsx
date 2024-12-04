@@ -5,21 +5,21 @@ import { FaBookReader, FaChalkboardTeacher, FaRegSmile, FaUserTie } from 'react-
 
 const courses = [
 	{
-		title: 'Mentörlük Eğitimi',
-		icon: <FaChalkboardTeacher size={35} className='text-secondary' /> // Öğretmen veya eğitim temsilcisi
+		title: 'Mentorlük Eğitimi',
+		icon: <FaChalkboardTeacher size={35} className='text-secondary' />
 	},
 
 	{
 		title: 'İletişim Eğitimi',
-		icon: <FaRegSmile size={35} className='text-secondary' /> // Empati ve iletişimi temsil eden bir gülümseme
+		icon: <FaRegSmile size={35} className='text-secondary' />
 	},
 	{
 		title: 'YKS Rehberlik Eğitimi',
-		icon: <FaBookReader size={35} className='text-secondary' /> // Rehberlik ve öğrenimi temsil eden kitap okuyucu
+		icon: <FaBookReader size={35} className='text-secondary' />
 	},
 	{
 		title: 'Liderlik Akademisi',
-		icon: <FaUserTie size={35} className='text-secondary' /> // Liderlik ve profesyonelliği temsil eden kravatlı kullanıcı
+		icon: <FaUserTie size={35} className='text-secondary' />
 	}
 ];
 
@@ -45,7 +45,7 @@ const CourseBar = () => {
 
 	return (
 		<div ref={ref} className='container px-6 py-16 mx-auto'>
-			<h2 className='mb-10 text-3xl font-bold text-center text-secondary'>Mentörlere Vereceğimiz Eğitimler</h2>
+			<h2 className='mb-10 text-3xl font-bold text-center text-secondary'>Mentorlere Vereceğimiz Eğitimler</h2>
 			<motion.div
 				initial='hidden'
 				animate={controls}
@@ -55,9 +55,13 @@ const CourseBar = () => {
 				className='grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4'
 			>
 				{courses.map((course, index) => (
-					<motion.div key={index} variants={itemVariants} className='flex flex-col items-center justify-center p-6 text-center transition'>
+					<motion.div
+						key={index}
+						variants={itemVariants}
+						className='flex flex-col items-center justify-center p-6 text-center transition bg-white rounded-lg shadow-xl'
+					>
 						<div className='mb-4 text-4xl'>{course.icon}</div>
-						<h3 className='mb-2 text-xl font-semibold text-primary'>{course.title}</h3>
+						<h3 className='mb-2 text-xl font-semibold text-secondary'>{course.title}</h3>
 					</motion.div>
 				))}
 			</motion.div>

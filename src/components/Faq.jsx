@@ -58,7 +58,7 @@ const sections = [
 		questions: faqData.slice(4, 6)
 	},
 	{
-		title: 'Mentörlük Süreci',
+		title: 'Mentorlük Süreci',
 		questions: faqData.slice(6, 9)
 	}
 ];

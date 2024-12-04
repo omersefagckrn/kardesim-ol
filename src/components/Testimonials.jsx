@@ -4,7 +4,7 @@ const testimonials = [
 	{
 		name: 'Öykü Aksoy',
 		role: 'Öğrenci',
-		description: 'Biliyorsunuz ki YKS çok uzun ve çok yorucu bir maraton. Ben de bu maratonu en sağlıklı şekilde bitirebilmek için bir desteğe ihtiyaç duydum ve mentörlük almaya başladım. Bu süreçteki destek beni çok rahatlattı.'
+		description: 'Biliyorsunuz ki YKS çok uzun ve çok yorucu bir maraton. Ben de bu maratonu en sağlıklı şekilde bitirebilmek için bir desteğe ihtiyaç duydum ve mentorlük almaya başladım. Bu süreçteki destek beni çok rahatlattı.'
 	},
 	{
 		name: 'Aynur Zerman',
@@ -14,22 +14,22 @@ const testimonials = [
 	{
 		name: 'Ahmet Yılmaz',
 		role: 'Öğrenci',
-		description: 'Mentörlük sistemi sayesinde deneme sınavları ve çalışma planlaması konusunda büyük bir yol katettim. Başarımı sizlerle paylaşmak istiyorum. Çok teşekkürler!'
+		description: 'Mentorlük sistemi sayesinde deneme sınavları ve çalışma planlaması konusunda büyük bir yol katettim. Başarımı sizlerle paylaşmak istiyorum. Çok teşekkürler!'
 	},
 	{
 		name: 'Ahmet Yılmaz',
 		role: 'Öğrenci',
-		description: 'Mentörlük sistemi sayesinde deneme sınavları ve çalışma planlaması konusunda büyük bir yol katettim. Başarımı sizlerle paylaşmak istiyorum. Çok teşekkürler!'
+		description: 'Mentorlük sistemi sayesinde deneme sınavları ve çalışma planlaması konusunda büyük bir yol katettim. Başarımı sizlerle paylaşmak istiyorum. Çok teşekkürler!'
 	},
 	{
 		name: 'Ahmet Yılmaz',
 		role: 'Öğrenci',
-		description: 'Mentörlük sistemi sayesinde deneme sınavları ve çalışma planlaması konusunda büyük bir yol katettim. Başarımı sizlerle paylaşmak istiyorum. Çok teşekkürler!'
+		description: 'Mentorlük sistemi sayesinde deneme sınavları ve çalışma planlaması konusunda büyük bir yol katettim. Başarımı sizlerle paylaşmak istiyorum. Çok teşekkürler!'
 	},
 	{
 		name: 'Ahmet Yılmaz',
 		role: 'Öğrenci',
-		description: 'Mentörlük sistemi sayesinde deneme sınavları ve çalışma planlaması konusunda büyük bir yol katettim. Başarımı sizlerle paylaşmak istiyorum. Çok teşekkürler!'
+		description: 'Mentorlük sistemi sayesinde deneme sınavları ve çalışma planlaması konusunda büyük bir yol katettim. Başarımı sizlerle paylaşmak istiyorum. Çok teşekkürler!'
 	}
 ];
 
