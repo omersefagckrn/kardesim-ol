@@ -3,6 +3,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import ParentBannerLogo from '../assets/parent-banner.png';
 import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
 	const controls = useAnimation();
@@ -62,7 +63,7 @@ const Banner = () => {
 								Gönüllü Mentor Ol
 							</motion.button>
 						</HashLink>
-						<HashLink to='#hero' scroll={(el) => scrollWithOffset(el)}>
+						<Link to='re-register'>
 							<motion.button
 								className='w-full px-6 py-3 font-medium text-white transition rounded-lg shadow-lg bg-secondary lg:w-auto hover:scale-105'
 								whileHover={{ scale: 1.05 }}
@@ -70,7 +71,7 @@ const Banner = () => {
 							>
 								Ücretsiz Menti Ol
 							</motion.button>
-						</HashLink>
+						</Link>
 					</div>
 					<ul className='pl-0 mt-2 space-y-2 text-center lg:text-left'>
 						<li className='text-lg leading-relaxed text-gray-700 lg:text-xl'>

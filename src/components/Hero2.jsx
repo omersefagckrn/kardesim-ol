@@ -2,6 +2,7 @@ import React from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaChalkboardTeacher } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Hero2 = () => {
 	const controls = useAnimation();
@@ -39,17 +40,12 @@ const Hero2 = () => {
 				<motion.h1 className='mb-4 text-xl font-bold text-white lg:text-2xl' variants={itemVariants}>
 					Üniversite sınav maratonunda ücretsiz mentorlük almak ister misin ?
 				</motion.h1>
-				<a
-					href='https://docs.google.com/forms/d/1c6D5-bMNXCu8bRYVeEUyxtU_hVIvBxK82D3JqxyzxQI/prefill'
-					alt='UCRETSIZ MENTI OL'
-					target='_blank'
-					className='text-secondary'
-				>
+				<Link to='/re-register' className='text-secondary'>
 					<motion.button className='flex items-center px-6 py-3 space-x-2 font-semibold transition bg-white rounded-lg' variants={itemVariants}>
 						Ücretsiz Menti Ol
 						<FaChalkboardTeacher size={35} className='text-secondary' />
 					</motion.button>
-				</a>
+				</Link>
 			</motion.div>
 		</div>
 	);
